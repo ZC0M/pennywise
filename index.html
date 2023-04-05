@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PenniWise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>  
+  <body>
+    <header>
+      <h1>PenniWise</h1>
+      <div class="user-header">
+        <span class="wallet-balance">$0.00</span>
+        <img class="user-avatar" src="default-avatar.jpg" width="64px" height="64px">
+        <nav class="nav">
+          <a href="player.html">Discover</a>
+          <a href="newlyAdded.html">Newly Added</a>
+          <a href="upload.html">Upload</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="search" placeholder="Search songs, artists, or genres">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="auth-links">
+        <a href="signUp.html">Sign up</a>
+        <a href="login.html">Log in</a>
+      </div>
+    </header>
+
+    <audio id="music-player"></audio>
+
+    <div id="player-controls">
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <button id="skip-button">Skip</button>
+    </div>
+
+    <div id="song-list">
+      <h2>Song List</h2>
+      <ul>
+        <li class="song">
+          <h3>song title</h3>
+          <p>song artist</p>
+          <div class="audio-controls">
+            <audio controls>
+              <source src="song.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 My SoundCloud-like Website</p>
+    </footer>
+  </body>
+</html>

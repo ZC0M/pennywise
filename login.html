@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - PenniWise</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>PenniWise</h1>
+    <div class="user-header">
+      <span class="wallet-balance">$0.00</span>
+      <img class="user-avatar" src="#" width="64px" height="64px">
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="player.html">Discover</a>
+        <a href="signUp.html">Sign up</a>
+        <a href="newlyAdded.html">Newly Added</a>
+        <a href="upload.html">Upload</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <form class="search-form" action="#" method="get">
+        <input type="text" name="search" placeholder="Search songs, artists, or genres">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  
+  <main>
+    <h1>Log in to PenniWise</h1>
+    <form id="login-form">
+      <label for="login-username">Username:</label>
+      <input type="text" id="login-username" name="login-username" required>
+      <br>
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" name="login-password" required>
+      <br>
+      <button type="submit">Log in</button>
+    </form>
+    <p>Don't have an account? <a href="signUp.html">Sign up</a> now.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My SoundCloud-like Website</p>
+  </footer>
+</body>
+</html>

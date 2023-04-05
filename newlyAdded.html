@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Newly Added - PenniWise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>PenniWise</h1>
+      <div class="user-header">
+        <span class="wallet-balance">$0.00</span>
+        <img class="user-avatar" src="#" width="64px" height="64px">
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="player.html">Discover</a>
+          <a href="signUp.html">Sign up</a>
+          <a href="newlyAdded.html">Newly Added</a>
+          <a href="upload.html">Upload</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="search" placeholder="Search songs, artists, or genres">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="tracks">
+        <h2>Recently Uploaded Songs</h2>
+        <ul id="tracks-list">
+          <!-- Tracks will be added here dynamically -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Your Website Name</p>
+    </footer>
+
+    <script>
+      // Define an array of objects to represent the recently uploaded songs
+      const recentlyUploadedSongs = [
+        { title: "Track 1", duration: "3:45" },
+        { title: "Track 2", duration: "4:15" },
+        { title: "Track 3", duration: "2:30" },
+        { title: "Track 4", duration: "3:45" },
+        { title: "Track 5", duration: "4:15" },
+        { title: "Track 6", duration: "2:30" },
+        { title: "Track 7", duration: "3:45" },
+        { title: "Track 8", duration: "4:15" },
+        { title: "Track 9", duration: "2:30" },
+        { title: "Track 10", duration: "3:45" },
+      ];
+
+      // Get the UL element that will hold the recently uploaded songs
+      const tracksList = document.getElementById("tracks-list");
+
+      // Loop through the recently uploaded songs and create an LI element for each
+      recentlyUploadedSongs.forEach(song => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        const span = document.createElement("span");
+        a.textContent = song.title;
+        a.setAttribute("href", "#");
+        span.textContent = song.duration;
+        li.appendChild(a);
+        li.appendChild(span);
+        tracksList.appendChild(li);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>PenniWise</h1>
+      <div class="user-header">
+        <span class="wallet-balance">$<span id="balance">0.00</span></span>
+        <img class="user-avatar" src="#" width="64px" height="64px">
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="player.html">Discover</a>
+          <a href="signUp.html">Sign up</a>
+          <a href="newlyAdded.html">Newly Added</a>
+          <a href="upload.html">Upload</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="search" placeholder="Search songs, artists, or genres">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <h2>Song Title</h2>
+      <audio src="song.mp3" controls onplay="awardPenny()" id="player"></audio>
+    </main>
+    <footer>
+      <p>&copy; 2023 Music Player. All rights reserved.</p>
+    </footer>
+    <script>
+      var balance = 0.00;
+      var hasPlayed = false;
+      var balanceElement = document.getElementById('balance');
+
+      function awardPenny() {
+        if (!hasPlayed) {
+          balance -= 0.01;
+          hasPlayed = true;
+          balanceElement.textContent = balance.toFixed(2);
+          // TODO: Send AJAX request to update campaign balance and user's wallet
+        }
+        document.getElementById("player").removeEventListener("play", awardPenny);
+      }
+    </script>
+  </body>
+</html>

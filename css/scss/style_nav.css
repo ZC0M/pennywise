@@ -1,0 +1,21 @@
+/* ============================================================
+    STYLESHEET - Navigation Bar
+============================================================ */
+
+nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  

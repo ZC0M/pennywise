@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PenniWise - Sign Up or Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>PenniWise</h1>
+      <link rel="stylesheet" href="style.css">
+      <div class="user-header">
+        <span class="wallet-balance">$0.00</span>
+        <img class="user-avatar" src="#" width="64px" height="64px">
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="player.html">Discover</a>
+          <a href="signUp.html">Sign up</a>
+          <a href="newlyAdded.html">Newly Added</a>
+          <a href="upload.html">Upload</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="search" placeholder="Search songs, artists, or genres">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <h1>Sign Up</h1>
+      <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>      
+    </main>
+    <footer>
+      <p>&copy; 2023 PenniWise. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

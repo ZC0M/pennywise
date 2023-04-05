@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Your Song - PenniWise</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>PenniWise</h1>
+    <div class="user-header">
+      <span class="wallet-balance">$0.00</span>
+      <img class="user-avatar" src="#" alt="User Avatar" width="64px" height="64px">
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="player.html">Discover</a>
+        <a href="signUp.html">Sign up</a>
+        <a href="newlyAdded.html">Newly Added</a>
+        <a href="upload.html">Upload</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <form class="search-form" action="#" method="get">
+        <input type="text" name="search" placeholder="Search songs, artists, or genres">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    </div>
+    <div class="upload-form">
+      <h2>Upload Your Song</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="song">Select a song to upload:</label>
+        <input type="file" id="song" name="song"><br>
+        <label for="balance">Campaign balance (in dollars):</label>
+        <input type="number" id="balance" name="balance" min="0" step="0.01"><br>
+        <input type="submit" value="Upload">
+      </form>
+    </div>    
+  </main>
+  <footer>
+    <p>&copy; 2023 PenniWise. All rights reserved.</p>
+  </footer>
+</body>
+</html>
