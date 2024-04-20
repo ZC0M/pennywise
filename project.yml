@@ -1,0 +1,5 @@
+            - name: Jira Login
+  # You may pin to the exact commit or the version.
+  # uses: atlassian/gajira-login@ca13f8850ea309cf44a6e4e0c49d9aa48ac3ca4c
+  uses: atlassian/gajira-login@v3
+          
